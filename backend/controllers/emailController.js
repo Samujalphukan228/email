@@ -9,7 +9,7 @@ export const sendEmail = async (req, res) => {
 
   const msg = {
     to,
-    from: process.env.SENDER_EMAIL, // must be verified sender
+    from: process.env.SENDER_EMAIL, 
     subject,
     html,
   };

@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-    baseURL: "https://email-backend-gray.vercel.app",
+    baseURL: process.env.NEXT_PUBLIC_API_URL,
 });
 
 export const sendEmail = (data) => API.post("/send", data);
